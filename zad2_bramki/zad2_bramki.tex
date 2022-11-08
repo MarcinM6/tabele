@@ -1,0 +1,88 @@
+\documentclass[a4paper]{article}
+\usepackage[MeX]{polski}
+\usepackage[left=3.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage[utf8]{inputenc} 
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{caption}
+\begin{document}
+\begin{table}[]
+\begin{tabular}{c |c | c}
+bramka & wejscie & wyjscie\\
+\hline
+\multirow{2}{4em}{NOT} & 0 & 1\\
+& 1 & 0\\
+\end{tabular}
+\end{table}
+
+
+\begin{table}
+\begin{tabular}{c |c c| c}
+bramka & \multicolumn {2}{c|}{wejscie} & wyjscie\\
+\hline
+\multirow{4}{4em}{AND} & 0 & 0 & 0\\
+& 0 & 1 & 0\\
+& 1 & 0 & 0\\
+& 1 & 1 & 1\\
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}
+\begin{tabular}{c |c c| c}
+bramka & \multicolumn {2}{c|}{wejscie} & wyjscie\\
+\hline
+\multirow{4}{4em}{NAND} & 0 & 0 & 1\\
+& 0 & 1 & 1\\
+& 1 & 0 & 1\\
+& 1 & 1 & 0\\
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}
+\begin{tabular}{c |c c| c}
+bramka & \multicolumn {2}{c|}{wejscie} & wyjscie\\
+\hline
+\multirow{4}{4em}{OR} & 0 & 0 & 0\\
+& 0 & 1 & 1\\
+& 1 & 0 & 1\\
+& 1 & 1 & 1\\
+\end{tabular}
+\end{table}
+
+
+
+
+\begin{table}
+\begin{tabular}{c |c c| c}
+bramka & \multicolumn {2}{c|}{wejscie} & wyjscie\\
+\hline
+\multirow{4}{4em}{NOR} & 0 & 0 & 1\\
+& 0 & 1 & 0\\
+& 1 & 0 & 0\\
+& 1 & 1 & 0\\
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[h]
+\begin{tabular}{c |c c| c}
+bramka & \multicolumn {2}{c|}{wejscie} & wyjscie\\
+\hline
+\multirow{4}{4em}{XOR} & 0 & 0 & 0\\
+& 0 & 1 & 1\\
+& 1 & 0 & 1\\
+& 1 & 1 & 0\\
+\end{tabular}
+\end{table}
+
+
+
+\end{document}
